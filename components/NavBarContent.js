@@ -31,7 +31,7 @@ var NavBarContent = React.createClass({
       setTimeout(() => {
         this.tweenState('opacity', {
           easing: tweenState.easingTypes.easeInOutQuad,
-          duration: 200,
+          duration: 50,
           endValue: 1
         });
       }, 0);

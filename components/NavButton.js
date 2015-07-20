@@ -27,7 +27,7 @@ var NavButton = React.createClass({
       backButton = <Text style={styles.navbarText}>Back</Text>
     }
 
-    let button = (this.props.useTouchableOpacity) ? (
+    var button = (this.props.useTouchableOpacity) ? (
       <TouchableOpacity onPress={this.onPress}>
         {backButton}
       </TouchableOpacity>
@@ -37,9 +37,7 @@ var NavButton = React.createClass({
       </TouchableHighlight>
     );
 
-    return (
-      {button}
-    )
+    return button;
   }
 });
 
